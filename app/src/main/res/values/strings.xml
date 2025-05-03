@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">foodhub</string>
+    <string name="meal_image">Imagen de comida</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout raíz: contenedor principal que ocupa toda la pantalla -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+    <!-- Contenedor vertical centrado para los elementos del formulario -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="32dp"
+        android:elevation="8dp"
+        android:layout_margin="32dp">
+        <!-- Imagen decorativa o logo (sin imagen asignada aún) -->
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"/>
+        <!-- Campo de texto para ingresar nombre de usuario o correo -->
+        <EditText
+            android:id="@+id/editUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usuario o correo"
+            android:inputType="textEmailAddress|textPersonName"
+            android:padding="12dp" />
+        <!-- Campo de texto para ingresar la contraseña -->
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"/>
+        <!-- Botón para iniciar sesión en la aplicación -->
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingresar"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#FF5722"
+            android:textColor="#FFFFFF"/>
+        <!-- Botón para ir al formulario de registro de nuevo usuario -->
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrarse"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#757575"
+            android:textColor="#FFFFFF"/>
+        <!-- Botón para acceder a configuración de cuenta -->
+        <Button
+            android:id="@+id/buttonAccountSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Configuración de Cuenta"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#03A9F4"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</RelativeLayout>

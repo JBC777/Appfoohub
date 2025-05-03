@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ScrollView: permite desplazamiento vertical cuando el contenido es mayor que la pantalla -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Contenedor principal vertical -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Campo de texto para ingresar el nombre de la comida a buscar -->
+        <EditText
+            android:id="@+id/editTextBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Buscar comida"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botón para iniciar la búsqueda de comida -->
+        <Button
+            android:id="@+id/buttonBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Texto para mostrar el resultado del nombre del platillo -->
+        <TextView
+            android:id="@+id/textViewResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aquí aparecerá el nombre"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"/>
+
+        <!-- Imagen que representa visualmente el platillo buscado -->
+        <ImageView
+            android:id="@+id/imageViewComida"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Imagen de la comida"
+            android:background="@android:color/darker_gray"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Texto que muestra las instrucciones de preparación -->
+        <TextView
+            android:id="@+id/textViewInstrucciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aquí aparecerán las instrucciones"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"/>
+
+        <!-- Botón para cerrar la sesión actual del usuario -->
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cerrar Sesión"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>

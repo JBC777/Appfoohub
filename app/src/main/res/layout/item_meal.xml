@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <!-- Contenedor interno vertical para organizar los elementos en columna -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Imagen del platillo (o cualquier elemento visual principal) -->
+        <ImageView
+            android:id="@+id/imageMealThumb"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/meal_image" />
+
+        <!-- Nombre del platillo en el centro -->
+        <TextView
+            android:id="@+id/textMealName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meal Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

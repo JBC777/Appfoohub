@@ -1,0 +1,43 @@
+# -----------------------
+# Android / Gradle
+# -----------------------
+.gradle/
+build/
+**/build/
+/captures
+
+# -----------------------
+# Android Studio
+# -----------------------
+.idea/
+*.iml
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+
+# -----------------------
+# Archivos locales
+# -----------------------
+local.properties
+/local.properties
+
+# -----------------------
+# NDK / CMake / external builds
+# -----------------------
+.externalNativeBuild/
+/.cxx/
+
+# -----------------------
+# Sistema operativo
+# -----------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------
+# Logs y temporales
+# -----------------------
+*.log
+*.tmp
