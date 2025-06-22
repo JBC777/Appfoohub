@@ -1,5 +1,5 @@
 package com.example.foodhub;
-//Comentario prueba
+
 // BLOQUE DE IMPORTACIONES
 // Se importan las clases necesarias para definir el servicio API con Retrofit
 import retrofit2.Call;
